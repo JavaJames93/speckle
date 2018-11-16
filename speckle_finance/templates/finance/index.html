@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Speckle Finance</title>
+
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'finance/style.css' %}">
+
+        <!--add d3-->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    </head>
+    <body>
+        <div id="testDiv">
+            <!--<p>Request URL:  {{api_url}}</p>-->
+            <p>Full Data: {{full_data}}</p>
+            <p>Close: ${{close}}</p>
+            <p>Batch Data: {{batch_data}}</p>
+            <p>Chart Data: {{chart_data}}</p>
+            <button id="submit">Submit</button>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        {% load static %}
+        <script type="text/javascript" src="{% static '/finance/site.js' %}"></script>
+
+    </body>
+</html>
